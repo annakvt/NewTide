@@ -9,6 +9,19 @@ import UIKit
 
 class searchPage: UIViewController {
 
+    @IBOutlet weak var searchBar: UITextField!
+    @IBOutlet weak var unisexSwitch: UISwitch!
+    @IBOutlet weak var ecoFriendlySwitch: UISwitch!
+    
+    @IBAction func searchButtonTapped(_ sender: UIButton) {
+        let searchQuery = searchBar.text?.trimmingCharacters(in: .whitespaces).lowercased()
+        if searchQuery == "pads" && unisexSwitch.isOn && ecoFriendlySwitch.isOn {
+            let nextViewController = storyboard?.instantiateViewController(withIdentifier: "padsUE") as! examplePadsSearchPage
+                navigationController?.pushViewController(nextViewController, animated:true)
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

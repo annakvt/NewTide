@@ -176,6 +176,9 @@
                                 <state key="normal" title="Take me to my journal -&gt;">
                                     <color key="titleColor" systemColor="secondaryLabelColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dog-g8-AUs" kind="show" id="4sm-Ho-WFG"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAQ-MI-CAe">
                                 <rect key="frame" x="125" y="44" width="206" height="69"/>
@@ -200,6 +203,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-qr-PC8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-368.11594202898556" y="750"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ag1-vV-t3L">
+            <objects>
+                <viewController id="dog-g8-AUs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h5d-rq-MaU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Journal " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lln-6v-Vqb">
+                                <rect key="frame" x="122" y="50" width="151" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Feel free to write whatever you want - this is a safe space for you and your thoughts :) " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DIL-jZ-iWN">
+                                <rect key="frame" x="87" y="180" width="240" height="559"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ukn-hg-wT4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cyd-ah-MYa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10g-Fa-AXv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-433.33333333333337" y="1445.7589285714284"/>
         </scene>
         <!--Heartbeat ActionsVC-->
         <scene sceneID="Mcs-5f-Vem">
@@ -653,6 +689,7 @@
         <!--View Controller-->
         <scene sceneID="8Oo-zX-60t">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wMC-Or-2Ht" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="adx-Pb-MTl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uJ7-Dp-fZC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -672,15 +709,45 @@
                                 <color key="textColor" red="0.19215686274509802" green="0.42352941176470588" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLg-sS-5My">
+                                <rect key="frame" x="2085" y="113" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wOC-pe-oEf">
+                                <rect key="frame" x="30" y="200" width="354" height="158"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <string key="text">The pink tax is an umbrella term for the tendency for female hygiene products to cost more than other essential items. This makes it very expensive for families and individuals to buy these products at an affordable rate. The pink tax is one of many factors that perpetuates period poverty (inadequate access to menstrual products.)
+</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2KV-9D-CEC">
+                                <rect key="frame" x="91" y="534" width="240" height="183.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">How to Stop The Pink Tax:  
+1. Buy gender neutral products or ones targeted to men. 
+2. Buy reusable menstrual products. 
+3. Research the brands you purchase from. 
+4. Support legislation to stop the pink tax. 
+</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GQf-5Y-xYp"/>
                         <color key="backgroundColor" red="0.87907141450000004" green="0.93275702000000005" blue="0.96078962089999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="eRJ-3l-qvj"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wMC-Or-2Ht" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3992.753623188406" y="1131.6964285714284"/>
+            <point key="canvasLocation" x="3992.753623188406" y="1130.3571428571429"/>
         </scene>
         <!--News Feed-->
         <scene sceneID="loM-Gf-0cn">
@@ -710,8 +777,17 @@
         <image name="magnify" width="22" height="22"/>
         <image name="newspaper" width="22" height="22"/>
         <image name="question" width="22" height="22"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

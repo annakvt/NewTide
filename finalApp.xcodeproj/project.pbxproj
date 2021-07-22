@@ -20,6 +20,7 @@
 		6BC2FF0026A898BD008C716F /* newsFeedPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC2FEFF26A898BD008C716F /* newsFeedPage.swift */; };
 		6BC2FF0426A89DE1008C716F /* heartbeatActionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC2FF0326A89DE1008C716F /* heartbeatActionsVC.swift */; };
 		6BC2FF0626A8F3AC008C716F /* examplePadsSearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC2FF0526A8F3AC008C716F /* examplePadsSearchPage.swift */; };
+		AC04C11E26AA09AF003CDE22 /* Zeyada-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AC04C11D26AA09AF003CDE22 /* Zeyada-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		6BC2FEFF26A898BD008C716F /* newsFeedPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsFeedPage.swift; sourceTree = "<group>"; };
 		6BC2FF0326A89DE1008C716F /* heartbeatActionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = heartbeatActionsVC.swift; sourceTree = "<group>"; };
 		6BC2FF0526A8F3AC008C716F /* examplePadsSearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = examplePadsSearchPage.swift; sourceTree = "<group>"; };
+		AC04C11D26AA09AF003CDE22 /* Zeyada-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Zeyada-Regular.ttf"; path = "../../../../Downloads/Zeyada/Zeyada-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		6B68958126A76707001CA00C /* finalApp */ = {
 			isa = PBXGroup;
 			children = (
+				AC04C11D26AA09AF003CDE22 /* Zeyada-Regular.ttf */,
 				6B68958226A76707001CA00C /* AppDelegate.swift */,
 				6B68958426A76707001CA00C /* SceneDelegate.swift */,
 				6B68958826A76707001CA00C /* Main.storyboard */,
@@ -249,6 +252,7 @@
 				6B68959226A7670B001CA00C /* LaunchScreen.storyboard in Resources */,
 				6B68958F26A7670B001CA00C /* Assets.xcassets in Resources */,
 				6B68958A26A76707001CA00C /* Main.storyboard in Resources */,
+				AC04C11E26AA09AF003CDE22 /* Zeyada-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

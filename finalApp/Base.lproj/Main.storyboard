@@ -973,7 +973,7 @@ Double Sided Reuseable Pads</string>
                                                     </attributedString>
                                                 </state>
                                                 <connections>
-                                                    <action selector="lolaPadLink:" destination="Q6o-9w-HQK" eventType="touchUpInside" id="6Is-WL-l9M"/>
+                                                    <action selector="rubyLoveLink:" destination="Q6o-9w-HQK" eventType="touchUpInside" id="cFd-oY-BkJ"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U8V-9a-dI0">
@@ -992,9 +992,6 @@ Organic Cotton Reusable Pads</string>
                                                         </fragment>
                                                     </attributedString>
                                                 </state>
-                                                <connections>
-                                                    <action selector="lolaPadLink:" destination="Q6o-9w-HQK" eventType="touchUpInside" id="idQ-94-q8N"/>
-                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeV-A6-ic7">
                                                 <rect key="frame" x="234" y="171" width="162" height="207"/>

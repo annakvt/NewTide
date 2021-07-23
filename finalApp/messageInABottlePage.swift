@@ -17,7 +17,7 @@ class messageInABottlePage: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bottleMessage.font = UIFont(name: "Avenir Next", size: 30)
+        bottleMessage.font = UIFont(name: "Avenir Next", size: 19)
         // Do any additional setup after loading the view.
     }
     

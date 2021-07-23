@@ -14,6 +14,14 @@ class examplePadsSearchPage: UIViewController {
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
     }
+    
+    @IBAction func rubyLoveLink(_ sender: UIButton) {
+        if let url = URL(string: "https://www.rubylove.com/product-page/double-sided-pads-3-pack") {
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+    }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

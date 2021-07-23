@@ -1,22 +1,23 @@
 //
-//  examplePadsSearchPage.swift
+//  messageInABottlePage.swift
 //  finalApp
 //
-//  Created by Anna Kovtunenko on 2021-07-21.
+//  Created by Anna Kovtunenko on 2021-07-22.
 //
 
 import UIKit
 
-class examplePadsSearchPage: UIViewController {
-
-    @IBAction func lolaPadLink(_ sender: UIButton) {
-        if let url = URL(string: "https://mylola.com/products/pads?utm_source=Rakuten&utm_medium=affiliate&utm_campaign=Skimlinks.com&ranMID=46373&ranEAID=TnL5HPStwNw&ranSiteID=TnL5HPStwNw-RZBttBmrTUHdj5QCZlN5yw") {
-        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+class messageInABottlePage: UIViewController {
+    @IBOutlet weak var bottleMessage: UITextView!
+    
+    @IBAction func sendMessageTapped(_ sender: UIButton) {
+        bottleMessage.selectAll(bottleMessage)
+        if let range = bottleMessage.selectedTextRange { bottleMessage.replace(range, withText: "")}
     }
-    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        bottleMessage.font = UIFont(name: "Avenir Next", size: 30)
         // Do any additional setup after loading the view.
     }
     

@@ -252,11 +252,13 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hMz-TO-73o">
                                 <rect key="frame" x="109" y="221" width="197" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.60161179300000001" green="0.74424320460000004" blue="0.7843217254" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <segments>
                                     <segment title="Neither"/>
                                     <segment title="Canada"/>
                                     <segment title="US"/>
                                 </segments>
+                                <color key="selectedSegmentTintColor" red="0.71764705882352942" green="0.71764705882352942" blue="0.80392156862745101" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <action selector="didChangeCountrySegement:" destination="IjT-Dp-3aj" eventType="valueChanged" id="SZ9-o1-XzQ"/>
                                 </connections>
@@ -1251,6 +1253,7 @@ $34.00</string>
     <inferredMetricsTieBreakers>
         <segue reference="Lgj-5B-3ny"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.3294117647" green="0.33333333329999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
         <image name="heartBeatBillNews" width="1686" height="1128"/>
         <image name="home" width="22" height="22"/>

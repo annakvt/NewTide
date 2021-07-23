@@ -536,7 +536,7 @@
         <!--Tracker-->
         <scene sceneID="qhA-zC-6k4">
             <objects>
-                <viewController id="3oe-vd-ZS4" sceneMemberID="viewController">
+                <viewController id="3oe-vd-ZS4" customClass="periodTrackerPage" customModule="finalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kIs-OT-j2J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -640,6 +640,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="periodLogSaveTapped:" destination="3oe-vd-ZS4" eventType="touchUpInside" id="qyQ-Rp-8lZ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72p-Md-vDX">
                                 <rect key="frame" x="19" y="400" width="38" height="22"/>
@@ -709,6 +712,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Track" image="journal" id="xdx-Pf-UHV"/>
                     <navigationItem key="navigationItem" title="Tracker" id="cB5-EE-XVc"/>
+                    <connections>
+                        <outlet property="energySlider" destination="t0v-VE-riE" id="6U6-dj-1Qa"/>
+                        <outlet property="flowSlider" destination="qcq-Ur-Wlu" id="EcK-AM-ToI"/>
+                        <outlet property="symptomsField" destination="meI-S5-PsT" id="V4s-cH-1dR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lFd-al-FaR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1118,6 +1126,7 @@ $34.00</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rva-mH-zWS">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.82766187189999996" green="0.88682228330000001" blue="0.85489916799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <connections>
                         <segue destination="ATi-Se-lNm" kind="relationship" relationship="rootViewController" id="pmh-1u-B59"/>
@@ -1207,6 +1216,7 @@ $34.00</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EVe-wi-HXZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.82766187189999996" green="0.88682228330000001" blue="0.85489916799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1226,6 +1236,7 @@ $34.00</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mfe-LP-bcu">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.82766187189999996" green="0.88682228330000001" blue="0.85489916799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
